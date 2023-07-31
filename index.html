@@ -9,13 +9,14 @@
 </head>
 
 <body>
+    <h1>My Calculator</h1>
     <table class="calculator">
         <tr>
-            <td><input type="button" value="c" onclick="clearDisplay('c')"></td>
-            <td colspan="3"> <input type="text" name="" id="display" disabled></td>
-            
-
+            <td><input id="c-btn-red" type="button" value="C" onclick="clearDisplay('c')"></td>
+            <td colspan="3"> <input class="disply-calculator" type="text" name="" id="display" disabled></td>
         </tr>
+
+       <div class="bottom">
         <tr>
             <td><input type="button" value="7" onclick="calDisplay('7')"></td>
             <td><input type="button" value="8" onclick="calDisplay('8')"></td>
@@ -40,6 +41,7 @@
             <td><input type="button" value="=" onclick="calqulation('=')"></td>
             <td><input type="button" value="+" onclick="calDisplay('+')"></td>
         </tr>
+       </div>
 
 
     </table>
@@ -47,18 +49,18 @@
     <!-- inline js -->
     <script>
         //  clear calculator display 
-        function clearDisplay(){
-            document.getElementById("display").value=" "
+        function clearDisplay() {
+            document.getElementById("display").value = " "
         }
         // added button value
-        function calDisplay(chek){
-            document.getElementById("display").value+=chek;
+        function calDisplay(chek) {
+            document.getElementById("display").value += chek;
         }
         // total calqulation
-        function calqulation(){
-            var a= document.getElementById("display").value;
-            var b=eval(a);
-            document.getElementById("display").value=b;
+        function calqulation() {
+            var a = document.getElementById("display").value;
+            var b = eval(a);
+            document.getElementById("display").value = b;
         }
 
     </script>

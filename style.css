@@ -3,14 +3,42 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+h1{
+    text-align: center;
+}
 .calculator{
-    background-color: gray;
+    background-color: #2f2e30;
+    width:400px;
+    height: 400px;
     margin: 0 auto;
     padding: 10px;
+}
+.disply-calculator{
+    width: 77%;
+    
+    padding: 30px;
+    background-color: #9daa73;
+    border-radius: 10px;
+    color: white;
+    font-weight:bolder;
+    
 }
 
 input[type=button]{
     width: 100%;
+    padding: 30px;
+    background-color: #7a7a7a; 
+    border-radius: 10px;
     
-    color: green;
 }
+#c-btn-red{
+   background-color: rgb(184, 46, 46);
+  
+}
+input:hover[type=button]{
+    background-color:salmon;
+    cursor: pointer;
+
+
+}
+
