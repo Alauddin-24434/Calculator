@@ -6,7 +6,11 @@ body{
 .calculator{
     background-color: gray;
     margin: 0 auto;
+    padding: 10px;
 }
-tr td{
-    pad: 50px;
+
+input[type=button]{
+    width: 100%;
+    
+    color: green;
 }

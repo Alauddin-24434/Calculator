@@ -11,8 +11,9 @@
 <body>
     <table class="calculator">
         <tr>
-            <td colspan="3"> <input type="text" name="" id="display"></td>
-            <td><input type="button" value="c" onclick="clear('c')"></td>
+            <td><input type="button" value="c" onclick="clearDisplay('c')"></td>
+            <td colspan="3"> <input type="text" name="" id="display" disabled></td>
+            
 
         </tr>
         <tr>
@@ -36,7 +37,7 @@
         <tr>
             <td><input type="button" value="0" onclick="calDisplay('0')"></td>
             <td><input type="button" value="." onclick="calDisplay('.')"></td>
-            <td><input type="button" value="=" onclick="calDisplay('=')"></td>
+            <td><input type="button" value="=" onclick="calqulation('=')"></td>
             <td><input type="button" value="+" onclick="calDisplay('+')"></td>
         </tr>
 
@@ -45,6 +46,20 @@
 
     <!-- inline js -->
     <script>
+        //  clear calculator display 
+        function clearDisplay(){
+            document.getElementById("display").value=" "
+        }
+        // added button value
+        function calDisplay(chek){
+            document.getElementById("display").value+=chek;
+        }
+        // total calqulation
+        function calqulation(){
+            var a= document.getElementById("display").value;
+            var b=eval(a);
+            document.getElementById("display").value=b;
+        }
 
     </script>
 </body>
