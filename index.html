@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
+
 <body>
-    
+    <table class="calculator">
+        <tr>
+            <td colspan="3"> <input type="text" name="" id="display"></td>
+            <td><input type="button" value="c" onclick="clear('c')"></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="calDisplay('7')"></td>
+            <td><input type="button" value="8" onclick="calDisplay('8')"></td>
+            <td><input type="button" value="9" onclick="calDisplay('9')"></td>
+            <td><input type="button" value="/" onclick="calDisplay('/')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="calDisplay('4')"></td>
+            <td><input type="button" value="5" onclick="calDisplay('5')"></td>
+            <td><input type="button" value="6" onclick="calDisplay('6')"></td>
+            <td><input type="button" value="*" onclick="calDisplay('*')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="calDisplay('1')"></td>
+            <td><input type="button" value="2" onclick="calDisplay('2')"></td>
+            <td><input type="button" value="3" onclick="calDisplay('3')"></td>
+            <td><input type="button" value="-" onclick="calDisplay('4')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="calDisplay('0')"></td>
+            <td><input type="button" value="." onclick="calDisplay('.')"></td>
+            <td><input type="button" value="=" onclick="calDisplay('=')"></td>
+            <td><input type="button" value="+" onclick="calDisplay('+')"></td>
+        </tr>
+
+
+    </table>
+
     <!-- inline js -->
     <script>
 
     </script>
 </body>
+
 </html>
